@@ -10,10 +10,6 @@ app.set('view engine','pug');
 app.set('views', path.join(__dirname,'views'));
 const userRoutes=require('./routers/userRoutes');
 app.use('/webHackers/user',userRoutes);
-// const analystRoutes=require('./routers/analystRoutes');
-// app.use('/bugSlayers/analyst',analystRoutes);
-// const dealersRoute=require('./routers/dealersRoutes');
-// app.use('/bugSlayers/dealers',dealersRoute);
 const viewsRoutes=require('./routers/viewsRoutes');
 app.use('/',viewsRoutes)
 module.exports=app;
